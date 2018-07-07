@@ -1,0 +1,45 @@
+{% extends "Docu/index.html" %}
+
+
+{% block index %}
+<div class="row">
+	<p>
+</div>
+<div class="row">
+
+
+					 {% for categoria, val in categorias.items %}
+
+
+						<div class="col-sm">
+							
+								<div class="card text-center">
+									  <div class="card-header">
+									    {{ categoria }}
+									  </div>
+
+									  <div class="card-body">
+									   {% for sub in val %}
+
+									 	 {{sub}}</br>
+
+									    {% endfor %}
+									  </div>
+
+
+								</div>
+
+
+						</div>
+
+					{% endfor %}
+
+
+</div>
+
+<div class="row">
+	<p>
+</div>
+
+
+{% endblock %}

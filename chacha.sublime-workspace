@@ -1,0 +1,986 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"su",
+				"subcategoria"
+			],
+			[
+				"cate",
+				"categoria"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"fi",
+				"filter"
+			],
+			[
+				"wikipy",
+				"Wikipy"
+			],
+			[
+				"sub",
+				"subcategoria"
+			],
+			[
+				"c",
+				"collapse"
+			],
+			[
+				"ca",
+				"categoria"
+			],
+			[
+				"gr",
+				"grupo"
+			],
+			[
+				"n",
+				"num_subcategorias"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"vie",
+				"views"
+			],
+			[
+				"s",
+				"salida"
+			],
+			[
+				"se",
+				"settings"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"id",
+				"id_sub"
+			],
+			[
+				"categ",
+				"categoria"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"Grupo",
+				"GrupoForm"
+			],
+			[
+				"form",
+				"form_gr"
+			],
+			[
+				"fie",
+				"field"
+			],
+			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"fomr",
+				"form_cat"
+			],
+			[
+				"P",
+				"PaginaForm"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"coo",
+				"coordenadas"
+			],
+			[
+				"o",
+				"output"
+			],
+			[
+				"lo",
+				"loadDrawing"
+			],
+			[
+				"ne",
+				"new_dict"
+			],
+			[
+				"ce",
+				"celdaOcupadaTablero"
+			],
+			[
+				"sa",
+				"save_drawing"
+			],
+			[
+				"cel",
+				"celdaOcupadaTablero"
+			],
+			[
+				"get",
+				"getCoordsbySimple"
+			],
+			[
+				"coord",
+				"coordenadas_celda_simple"
+			],
+			[
+				"co",
+				"coordenadas_2_2"
+			],
+			[
+				"al",
+				"alto"
+			],
+			[
+				"ge",
+				"getCoordsbySimple"
+			],
+			[
+				"coor",
+				"coords"
+			],
+			[
+				"bton",
+				"boton3"
+			],
+			[
+				"an",
+				"ancho_celda"
+			],
+			[
+				"for",
+				"forward"
+			],
+			[
+				"anc",
+				"ancho_celda"
+			],
+			[
+				"alto",
+				"alto_celda"
+			],
+			[
+				"to",
+				"totalCeldas"
+			],
+			[
+				"com",
+				"compruebaCeldaOcupada"
+			],
+			[
+				"fil",
+				"fila_random"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"x",
+				"xClick"
+			],
+			[
+				"cl",
+				"clicks"
+			],
+			[
+				"y",
+				"yClick"
+			],
+			[
+				"key",
+				"keys"
+			],
+			[
+				"fu",
+				"full"
+			],
+			[
+				"ancho",
+				"ancho_celda"
+			],
+			[
+				"p",
+				"player"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Wikipy/views.py",
+			"settings":
+			{
+				"buffer_size": 11375,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/views.py",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/templates/Wikipy/grupo.html",
+			"settings":
+			{
+				"buffer_size": 2828,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/templates/Wikipy/search.html",
+			"settings":
+			{
+				"buffer_size": 2424,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/templates/Wikipy/inicio.html",
+			"settings":
+			{
+				"buffer_size": 2385,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/templates/Wikipy/index.html",
+			"settings":
+			{
+				"buffer_size": 5726,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/urls.py",
+			"settings":
+			{
+				"buffer_size": 939,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Wikipy/urls.py",
+			"settings":
+			{
+				"buffer_size": 1184,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Wikipy/models.py",
+			"settings":
+			{
+				"buffer_size": 1554,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Wikipy/forms.py",
+			"settings":
+			{
+				"buffer_size": 1785,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chachaland/settings.py",
+			"settings":
+			{
+				"buffer_size": 3306,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Changelog"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/chachaland/Chachaland/Chachaland/views.py",
+		"/home/chachaland/Chachaland/Wikipy/views.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/search.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/500.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/404.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/500.html",
+		"/home/chachaland/Descargas/404-16-html5/index.html",
+		"/home/chachaland/Descargas/404-16-html5/styles/index.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/404.html",
+		"/home/chachaland/Descargas/404-22-html5/index.html",
+		"/home/chachaland/Descargas/404-22-html5/styles/index.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/categorias.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/add_sub.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/add_gr.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/add_pag.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/add_cat.html",
+		"/home/chachaland/webfactions/urls.py",
+		"/home/chachaland/webfactions/Chachaland/settings.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/subcategorias.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/index.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/categorias.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/index.html",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/subcategorias.html",
+		"/home/chachaland/Chachaland/Docu/views.py",
+		"/home/chachaland/Chachaland/Wikipy/admin.py",
+		"/home/chachaland/luisvillarbello/portfolio/models.py",
+		"/home/chachaland/Chachaland/Portfolio/models.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/pagina.html",
+		"/home/chachaland/Chachaland/Chachaland/static/wikipy/ckeditor/config.js",
+		"/home/chachaland/webfactions/Chachaland/urls.py",
+		"/home/chachaland/Chachaland/Wikipy/forms.py",
+		"/home/chachaland/webfactions/settings.py",
+		"/home/chachaland/webfactions/error_chachaland.log",
+		"/home/chachaland/Chachaland/Docu/urls.py",
+		"/home/chachaland/Chachaland/Docu/forms.py",
+		"/home/chachaland/Chachaland/Docu/models.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Wikipy/contenido.html",
+		"/home/chachaland/Chachaland/Docu/admin.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/head.html",
+		"/home/chachaland/Chachaland/QuizCha/admin.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/addpage.html",
+		"/home/chachaland/Chachaland/QuizCha/apps.py",
+		"/home/chachaland/Chachaland/Docu/apps.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Docu/js.html",
+		"/home/chachaland/Chachaland/manage.py",
+		"/home/chachaland/Chachaland/Chachaland/urls.py",
+		"/home/chachaland/Chachaland/Chachaland/settings.py",
+		"/home/chachaland/luisvillarbello/luisvillarbello/view.py",
+		"/home/chachaland/Chachaland/Portfolio/views.py",
+		"/home/chachaland/Chachaland/Portfolio/urls.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/Portfolio/index.html",
+		"/home/chachaland/luisvillarbello/luisvillarbello/settings.py",
+		"/home/chachaland/webfactions/Chachaland/Chachaland/settings.py",
+		"/home/chachaland/Chachaland/Chachaland/static/vendor/font-awesome/css/font-awesome.css",
+		"/home/chachaland/Chachaland/Chachaland/static/vendor/devicons/css/devicons.css",
+		"/home/chachaland/Escritorio/tmpPortfolio/startbootstrap-resume-gh-pages/LICENSE",
+		"/home/chachaland/Chachaland/Chachaland/templates/Portfolio/inicio.html",
+		"/home/chachaland/Escritorio/pyside/main.py",
+		"/home/chachaland/Escritorio/wx/main.py",
+		"/home/chachaland/Escritorio/tortuga/Py/chachaclas/Tablero.py",
+		"/home/chachaland/Escritorio/tortuga/Py/chachaclas/nume.py",
+		"/home/chachaland/Escritorio/tortuga/Py/main.py",
+		"/home/chachaland/Escritorio/tortuga/Py/coordenadas",
+		"/home/chachaland/Escritorio/tortuga/Pixel/chachaclas/Tablero.py",
+		"/home/chachaland/Escritorio/tortuga/3enLinea/chachaclas/Tablero.py",
+		"/home/chachaland/Escritorio/tortuga/3enLinea/main.py",
+		"/home/chachaland/Escritorio/tortuga/3enLinea/chachaclas/Player.py",
+		"/home/chachaland/Escritorio/tortuga/3enLinea/chachaclas/Tortuga.py",
+		"/home/chachaland/Chachaland/Chachaland/templates/admin/base_site.html",
+		"/home/chachaland/chachaEnv/lib/python3.5/site-packages/django/contrib/admin/templates/admin/base_site.html",
+		"/home/chachaland/chachaEnv/lib/python3.5/site-packages/django/contrib/admin/templates/admin/index.html",
+		"/home/chachaland/chachaEnv/lib/python3.5/site-packages/django/contrib/admin/templates/admin/base.html",
+		"/home/chachaland/webfactions/Chachaland/Chachaland/urls.py",
+		"/home/chachaland/webfactions/httpd.conf",
+		"/home/chachaland/webfactions/myproject/myproject/settings.py",
+		"/home/chachaland/webfactions/myproject/myproject/wsgi.py",
+		"/home/chachaland/webfactions/myproject/myproject/urls.py",
+		"/home/chachaland/Escritorio/tortuga/Pixel/main.py",
+		"/home/chachaland/webfactions/index.html",
+		"/home/chachaland/Escritorio/tortuga/Pixel/setup.py",
+		"/home/chachaland/Escritorio/Pixel/chachaclas/Tablero.py",
+		"/home/chachaland/Escritorio/Pixel/main.py",
+		"/home/chachaland/Escritorio/Pixel/chachaclas/Tablas.py",
+		"/home/chachaland/Escritorio/Pixel/chachaclas/Malla.py",
+		"/home/chachaland/Escritorio/tortuga/main.py",
+		"/home/chachaland/Escritorio/tortuga/chachaclas/Tablero.py",
+		"/home/chachaland/Escritorio/tkinter/main3.py",
+		"/home/chachaland/Escritorio/tkinter/main.py",
+		"/home/chachaland/Escritorio/WxPython/main.py",
+		"/home/chachaland/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/home/chachaland/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/chachaland/Escritorio/Game/main.sublime-project",
+		"/home/chachaland/.config/sublime-text-3/Packages/project_venv_repls.py",
+		"/home/chachaland/Escritorio/Game/main.py",
+		"/home/chachaland/Escritorio/tortuga/chachaclas/chachafunctions.py",
+		"/home/chachaland/Escritorio/tortuga/chachaclas/Tortuga.py",
+		"/home/chachaland/Escritorio/3enLinea/main.py",
+		"/home/chachaland/Escritorio/tortuga/chachaclas/Player.py",
+		"/home/chachaland/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
+		"/home/chachaland/.config/sublime-text-3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
+		"/home/chachaland/.config/sublime-text-3/Packages/User/python3.sublime-build",
+		"/home/chachaland/Chachaland/Docu/templates/Docu/interprete.html",
+		"/home/chachaland/sss.py"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"},\n",
+			"buscar\n",
+			"buscar",
+			">\n",
+			"dashboard",
+			"id",
+			"padding",
+			"paddinf",
+			"\t\n\tclass Meta:\n\t\tmodel = Pagina\n\t\tfields = ('titulo','contenido','puntuacion','subcategoria')\n\t\t\n\t\n\t",
+			"            <"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Wikipy/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10113,
+								10113
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5078.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Chachaland/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Chachaland/templates/Wikipy/grupo.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1779,
+								1779
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1092.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Chachaland/templates/Wikipy/search.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Chachaland/templates/Wikipy/inicio.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2131,
+								2131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1008.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Chachaland/templates/Wikipy/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5038,
+								5038
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2784.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "Chachaland/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								730,
+								730
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Wikipy/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								898,
+								898
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "Wikipy/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1500,
+								1500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 491.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Wikipy/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Chachaland/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								818,
+								818
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 238.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.511979166667,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.438753959874,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 168.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/python3.sublime-build",
+	"project": "chacha.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Chachaland/chacha.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

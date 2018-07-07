@@ -1,0 +1,169 @@
+{% extends "Wikipy/index.html" %}
+
+
+{% block inicio %}
+
+
+<h1>Bienvenido a WikiPy</h1>
+
+<h4>Base de conocimiento</h4>
+
+
+
+
+<div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%for grupo in grupos%}
+
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+
+      <!-- <img width="100" src="/{{grupo.img}}" alt="...">-->
+
+      <div class="caption">
+
+        <h3>{{grupo}}</h3>
+        
+        
+
+<div class="progress" style="margin-bottom: -15px">
+
+
+
+
+{%for categoria in grupo.categorias%}
+  <div class="progress-bar progress-bar-default" style="background-color:{{categoria.color}};width: {{categoria.porcentaje}}%">
+    <span class="sr-only"></span>
+  </div>
+{%endfor%}
+	
+
+
+
+</div>
+
+        
+
+	
+
+ <table class="table table-hover">
+             
+
+              <thead>
+                <tr class="active">
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+              </thead>
+              <tbody>
+              	
+
+              	{%for categoria in grupo.categorias%}
+
+              	<tr>
+              		<td><a href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}">
+		        	  {{categoria}}
+		        	</a>
+		        	</td>
+              		<td class = "text-left">
+
+              			<a data-toggle="collapse" href="#collapse-{{categoria.id}}" aria-expanded="false" aria-controls="collapseExample">
+						  
+						
+              			<span class="label label-default pull-right" style="background-color:{{categoria.color}}">{{categoria.num_subcategorias}} 
+              			</span>
+
+              			</a>
+
+              		
+
+              		</td>
+
+              	</tr>
+
+
+              	<tr class="collapse" id="collapse-{{categoria.id}}">
+              		<td colspan="2" style="background-color:{{categoria.color}};">
+              			<div class="">
+							{%for subcategoria in categoria.subcategorias%}
+
+							<a style="color:white" href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}/sub/{{subcategoria.id}}">
+						  	{{subcategoria}}<br>
+						  	</a>
+
+						    {%endfor%}
+						   </div>
+
+
+              		</td>
+
+              	</tr>
+
+
+
+
+              	 {%endfor%}
+
+
+
+              </tbody>
+
+ </table>
+
+
+      
+
+
+
+       
+
+        <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+      </div>
+
+    </div>
+
+  </div>
+
+{%endfor%}
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

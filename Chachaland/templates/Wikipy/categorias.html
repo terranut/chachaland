@@ -1,0 +1,210 @@
+{% extends "Wikipy/index.html" %}
+
+
+{% block categoria %}
+
+{{grupo}}
+
+ <h1 >{{categoria}}</h1>
+
+{%if edit%}
+ <a style="color:white" href="/wiki/add/pag/cat/{{categoria.id}}">
+ 	<span class="label label-default">
+ 	<span class="glyphicon glyphicon-plus "></span>
+ 	</span>
+
+ </a>
+
+   <a style="color:white" href="/wiki/edit/cat/{{grupo.id}}/{{categoria.id}}">
+  <span class="label label-default">
+  <span class="glyphicon glyphicon-pencil "></span>
+  </span>
+
+ </a>
+
+
+
+  <a style="color:white" href="/wiki/rm/cat/{{categoria.id}}/{{grupo.id}}">
+ 	<span class="label label-default">
+ 	<span class="glyphicon glyphicon-trash "></span>
+ 	</span>
+
+ </a>
+ {%endif%}
+
+ <hr>
+
+<!--Paginas para categoria -->
+
+           {% for pagina in paginas %}
+
+           <div class="panel panel-default">
+        <div class="panel-heading">
+
+       <spam style="font-size: 20px">{{pagina.titulo}}</spam>
+
+       {%if edit%}
+      <div class="btn-group btn-group-xs" role="group" aria-label="...">
+
+         <a href="/wiki/edit/pag/{{pagina.id}}/{{grupo.id}}/{{categoria.id}}/0" style="padding: 2px; text-decoration: none">
+          <span class="label label-success">
+          <span class="glyphicon glyphicon-pencil "></span>
+        </span>
+        </a>
+
+
+
+        <a href="/wiki/rm/pag/{{pagina.id}}/X/{{grupo.id}}/{{pagina.categoria.id}}" style="padding: 2px; text-decoration: none">
+          <span class="label label-danger">
+          <span class="glyphicon glyphicon-trash "></span>
+        </span>
+        </a>
+      </div>
+      {%endif%}
+
+
+      </div>
+
+        <div class="panel-body">
+
+
+           {{pagina.contenido|safe  }}
+
+
+        </div>
+      </div>
+         
+
+     
+           
+
+      <hr>
+           {%endfor%}
+
+<!--END paginas para categoria-->
+
+{%if subcategorias%}
+<h4>Relacionado</h4>
+
+
+  <table class="table table-hover" style="width:300px">
+              <caption></caption>
+
+              <thead>
+                <tr class="active">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+
+              </thead>
+              <tbody>
+
+                {% for sub in subcategorias %}
+
+                  <tr>
+                      
+
+                    <td><a href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}/sub/{{sub.id}}">{{sub}}</a> </td>
+                    <td>
+                       {%if edit%}
+                      <a href="/wiki/rm/sub/{{sub.id}}/{{grupo.id}}/{{categoria.id}}" style="padding: 2px; text-decoration: none">
+                      <span class="label label-danger">
+                      <span class="glyphicon glyphicon-trash "></span>
+                       </span>
+                       </a>
+                       {%endif%}
+
+                    </td>
+
+
+                    <td>
+                      <a href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}/sub/{{sub.id}}" style="padding: 2px; text-decoration: none">
+                      
+                      <span class="glyphicon glyphicon-eye-open "></span>
+                       
+                       </a>
+
+
+                    </td>
+           
+                  </tr>
+
+
+
+                {%endfor%}
+
+
+                  {%if edit%}
+                  <tr>
+                    <td>Añadir contenido relacionado</td>
+                    <td> <a style="color:white" href="/wiki/add/sub/{{categoria.id}}/{{grupo.id}}">
+                    <span class="label label-default">
+                    <span class="glyphicon glyphicon-plus "></span>
+                    </span>
+
+                   </a></td>
+                   <td></td>
+
+
+                  </tr>
+                  {%endif%}
+
+
+              </tbody>
+
+
+
+            </table>
+{%endif%}
+
+
+{%if not subcategorias%}
+
+  <table class="table table-hover" style="width:300px">
+ 
+
+                  {%if edit%}
+                  <tr>
+                    <td>Añadir contenido relacionado</td>
+                    <td> <a style="color:white" href="/wiki/add/sub/{{categoria.id}}/{{grupo.id}}">
+                    <span class="label label-default">
+                    <span class="glyphicon glyphicon-plus "></span>
+                    </span>
+
+                   </a></td>
+                   <td></td>
+
+
+                  </tr>
+                  {%endif%}
+
+
+              </tbody>
+
+
+
+            </table>
+
+
+
+
+{%endif%}
+
+
+
+     
+
+       
+
+
+
+
+
+
+
+
+ 
+{% endblock %}

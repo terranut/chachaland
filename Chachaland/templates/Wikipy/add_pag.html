@@ -1,0 +1,112 @@
+{% extends "Wikipy/index.html" %}
+{% load static %}
+
+
+
+
+
+
+
+{% block add_pag %}
+
+{% if edit %}
+
+Edición 
+
+
+{%endif%}
+
+
+
+{% if not edit %}
+contenido nuevo en
+
+
+{%endif%}
+
+
+
+				<a href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}">
+				<span class="label label-warning">{{categoria}} </span>
+				</a>
+
+				{% if subcategoria %}
+				<span class="glyphicon glyphicon-hand-right "></span>
+				
+				<a href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}/sub/{{subcategoria.id}}">
+				<span class="label label-warning">{{subcategoria}} </span>
+				</a>
+
+				{%endif%}
+
+	
+
+
+
+
+<hr>
+
+<div><br></div>
+
+  <div class="form-group">
+
+	 <form method="POST" class="post-form">{% csrf_token %}	
+
+	 	{% for campo in form%}
+
+		<div class="form-group">
+
+		    <label  class="col-sm-2 control-label">{{campo.label}}</label>
+
+		    <div class="col-sm-10">
+		      {{campo}}
+		      <br>
+		    </div>
+		    
+		</div>
+
+		{%endfor%}
+
+
+		{% for campo in form_links%}
+
+		<div class="form-group">
+
+		    <label  class="col-sm-2 control-label">{{campo.label}}</label>
+
+		    <div class="col-sm-10">
+		      {{campo}}
+		      <br>
+		    </div>
+		    
+		</div>
+
+		{%endfor%}
+
+
+
+	     
+
+	      <div>
+
+	      	<hr>
+	<button type="submit" class="btn btn-default">Guardar</button>
+	<input type="button" onclick="history.back()" class="btn btn-default" name="volver atrás" value="Cancelar">
+			</div>
+
+	</form>     	
+	     
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+{% endblock %}

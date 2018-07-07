@@ -1,0 +1,254 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Wikypy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "/wikipy/css/bootstrap.min.css" %}" rel="stylesheet">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "/wikipy/css/dashboard.css" %}" rel="stylesheet">
+    <link href="{% static "/wikipy/css/prism.css" %}" rel="stylesheet">
+
+    <style type="text/css">
+      a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+    
+   </style>
+
+
+
+
+ 
+  </head>
+
+
+
+
+  <body >
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/wiki">Wikipy</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li>
+
+              {%if edit%}
+              <a href="/wiki/editon/off">Modo edición: <spam style="color:green">on</spam></a>
+              {%endif%}
+
+              {%if not edit%}
+              <a href="/wiki/editon/on">Modo edición: <spam style="color:red">off</spam></a>
+              {%endif%}
+
+
+            </li>
+          </ul>
+
+
+
+          <form method="GET" class="navbar-form navbar-right" action="/wiki/search">{% csrf_token %}
+
+            <input type="text" name="busqueda" class="form-control" placeholder="Buscar..." value="{{ buscar|escape }}">
+
+          </form>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" >
+
+
+
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <!--<span class="sr-only">(current)</span>-->
+          
+            
+          
+         
+
+          <spam>SECCIÓN</spam>
+
+
+
+          {%if edit%}
+           <spam>
+           <a style="color:white" href="/wiki/add/gr">
+            <span class="label label-default">
+              <span class="glyphicon glyphicon-plus "></span>
+              </span>
+            </a>
+          </spam>
+          {%endif%}
+
+          <ul class="nav nav-sidebar">
+            {% for grupo in grupos %}
+            <li><a href="/wiki/grupo/{{grupo.id}}">{{grupo}}</a></li>
+          
+            {%endfor%}
+            
+          </ul>
+          <hr>
+
+
+
+
+          {% if grupo %}
+          <spam>{{grupo}}
+
+            {%if edit%}
+           <a style="padding: 2px; text-decoration: none" href="/wiki/add/cat/{{grupo.id}}">
+            <span class="label label-default">
+              <span class="glyphicon glyphicon-plus "></span>
+              </span>
+            </a>
+             <a style="color:white" href="/wiki/rm/gr/{{grupo.id}}">
+            <span class="label label-default">
+              <span class="glyphicon glyphicon-trash "></span>
+              </span>
+            </a>
+            {%endif%}
+
+
+          </spam>
+
+
+
+          {%endif%}
+
+
+
+
+            <ul class="nav nav-sidebar">
+            {% for cat in categorias %}
+            <li>
+
+              <a href="/wiki/grupo/{{grupo.id}}/cat/{{cat.id}}">
+              {{cat.nombre}}
+              </a>
+
+
+            </li>
+           
+            {%endfor%}
+
+          </ul>
+          <hr>
+
+        </div>
+
+
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" >
+
+
+            {% block grupo %}
+            {% endblock %}
+
+            {% block categoria %}
+            {% endblock %}
+            {% block subcategoria %}
+            {% endblock %}
+            {% block add_pag %}
+            {% endblock %}
+            {% block add_cat %}
+            {% endblock %}
+            {% block add_sub %}
+            {% endblock %}
+            {% block add_gr %}
+            {% endblock %}
+            {% block inicio%}
+            {% endblock %}
+
+            {% block search%}
+            {% endblock %}
+             {% block error500%}
+            {% endblock %}
+
+
+
+
+         
+          
+          <!-- -->
+
+          
+
+        <!-- -->
+
+        </div>
+
+    
+
+
+
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{% static "/wikipy/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "/wikipy/js/prism.js" %}"></script>
+
+    <script src="{% static "/wikipy/ckeditor/ckeditor.js" %}"></script>
+
+   
+
+
+    <script>
+    $(function () {
+        CKEDITOR.replace('id_contenido', {
+          toolbar: 'Basic'
+            
+        });
+    });
+
+
+
+
+
+
+</script>
+
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+
+  
+
+  </body>
+</html>

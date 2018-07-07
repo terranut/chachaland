@@ -1,0 +1,210 @@
+
+{% extends "Docu/index.html" %}
+{% load docu_extras %}
+{% load static %}
+
+
+{% block pagina %}
+
+	<A name="inicio"></A>
+  
+
+<div class="row">
+
+<div class="col-sm">
+		<div class="card text-left">
+		  <div class="card-header">
+
+		     <h3>{{contenido.titulo}}</h3>
+
+	 
+		    
+		      <div class="btn-group">
+ 
+ 
+  	<a href="/admin/Docu/pagina/{{contenido.id}}/change/" class="btn btn-success" data-toggle="tooltip" title="Editar" style="color: black"> 
+  		<img width="15px" src="{% static "/svg/pencil.svg" %}" alt="editar">  Editar</a>
+
+
+  	<a href="/docu/test" class="btn btn-success" target="_blank" data-toggle="tooltip" title="Codigo" style="color: black"> 
+  		 <img width="15px" data-toggle="tooltip" title="Area de pruebas" src="{% static "/svg/code.svg" %}">
+  	  Código</a>
+
+		</div> 
+		</div>
+
+
+		  <div class="card-body">
+		    <h5 class="card-title"></h5>
+		    <p class="card-text">
+		    	
+		    	{{contenido.descripcion|startCode:"<pre>"|endCode:"</pre>"|starCita|endCita|safe}}
+		    	
+
+		    </p>
+
+		    {% if contenido.codigo %}
+		    
+		 <div class="card bg-secondary">
+
+	  					<div class="card-body">
+
+							    					
+														<pre style="color: white">{{contenido.codigo}}</pre>
+														 <a href="/docu/test/{{contenido.id}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" title="Codigo" style="color: black;font-size: 9px"> 
+										  		 		<img width="15px" data-toggle="tooltip" title="Area de pruebas" src="{% static "/svg/code.svg" %}">
+										  	  			
+										  	  			</a>
+							  					</div>
+							  					
+		</div>
+			{% endif %}
+
+		  </div>
+		  <div class="card-footer text-muted">
+				    {% if subpaginas %}
+
+				Relacionado:
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+
+				  	{% for subpagina in subpaginas %}
+
+				    <li class="breadcrumb-item active" aria-current="page">	<a  href="#{{subpagina.titulo}}">
+
+					{{subpagina}}
+
+					</a></li>
+				    {% endfor %}
+				  </ol>
+				</nav>
+
+				{% endif %}
+
+
+				{% if enlaces %}
+				Referencias:
+				{% endif %}
+
+
+				{% for enlace in enlaces %}
+				
+
+				<a href="{{enlace}}" target="_blank">{{enlace}} </a>
+				
+				 {% if forloop.revcounter0 >= 1 %}
+
+					||
+				{% endif %}
+				{% endfor %}
+
+
+
+		  </div>
+		</div>
+
+</div>
+
+</div>
+
+
+<!-- FIN PAGINA PRINCIPAL -->
+
+
+<div class="row"><p></p></div>
+
+
+
+{% for pagina, enlaces in enlaces_subpaginas.items %}
+	
+<div class="row">
+
+	<div class="col-sm">
+		<div class="card ">
+					  <div class="card-header">
+					  	
+					  	<A name="{{pagina.titulo}}"></A>
+					    
+								  <div class="row">
+								    <div class="col">
+								       <h4>{{ pagina.titulo }}</h4>
+
+								           	<a href="/admin/Docu/pagina/{{pagina.id}}/change/" class="btn btn-success" data-toggle="tooltip" title="Editar" style="color: black"> 
+  											<img width="15px" src="{% static "/svg/pencil.svg" %}" alt="editar">  Editar</a>
+
+								    </div>
+								    <div class="col-md-auto">
+								    
+								    </div>
+
+								    <div class="col col-lg-1" style="text-align: left;">
+								    	
+								    	<a href="#inicio" style="color: black">
+								    	<button type="button" class="btn btn-secondary"> ^</button>
+								        </a>
+								    	
+								    </div>
+								  </div>
+								
+					  </div>
+
+					  <div class="card-body ">
+					  	
+	
+
+					    {{pagina.descripcion|startCode:"<pre>"|endCode:"</pre>"|starCita|endCita|safe}}
+					    
+					    
+
+					    <p>
+					    	  {% if pagina.codigo %}
+					    <div class="card-body bg-secondary">
+					    <pre style="color: white">{{pagina.codigo}}</pre>
+					    <div>
+					     <a href="/docu/test/{{pagina.id}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" title="Codigo" style="color: black;font-size: 9px"> 
+						<img width="15px" data-toggle="tooltip" title="Area de pruebas" src="{% static "/svg/code.svg" %}">
+										  	  			
+						</a></div>
+
+					    </div>
+					    		{% endif %}
+
+
+					    
+					  </div>
+					   <div class="card-footer text-muted">
+
+					   	{% if enlaces.1 %}
+						Otros:
+						{% endif %}
+						{% for pagina in enlaces.1 %}
+						<a href="{{pagina.id}}">{{pagina}}</a>
+					  	
+					  	{% endfor %}
+<br/>
+					   	{% if enlaces.0 %}
+						Referencias:
+						{% endif %}
+
+					    {% for enlace in enlaces.0 %}
+					    <a href="http//{{enlace}}" target="_blank">{{enlace}}</a>
+					   	{% if forloop.revcounter0 >= 1 %}
+
+						||
+						{% endif %}
+					    
+					    {% endfor %}
+					   </div>
+
+
+		</div>
+	</div>
+
+	
+
+</div>
+<div class="row"><p></div>
+{% endfor %}
+
+
+{% endblock %}

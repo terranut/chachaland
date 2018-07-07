@@ -1,0 +1,98 @@
+{% extends "Docu/index.html" %}
+
+{% load static %}
+{% block categoria %}
+<div class="row">
+
+
+      <h1 class="my-4" style="padding-left:15px;color:white">
+   {{ seccion }}
+
+  	<a href="/admin/Docu/pagina/add" class="btn btn-info" data-toggle="tooltip" title="Añadir pagina" style="color: black"> 
+  		<img width="15px" src="{% static "/svg/plus.svg" %}" alt="editar">  </a>
+
+        <small></small>
+      </h1>
+
+
+</div>
+
+
+<div class="row">
+{% for sub,pages in contenido.items %}	
+		<div class="col-sm-4">
+
+			
+			<table class="table table-dark table-responsive">
+			
+			      <th ><h3>{{sub}}</h3></th>
+			      		     
+
+			  
+			  {% for page in pages %}
+			  	
+			    <tr>
+			   
+			      	<td>{{ forloop.counter }}. 
+			        <a href="../page/{{ page.id }}" data-toggle="tooltip" title="{{ page.descripcion }}">{{page}}</a>
+			      </td>
+			      			    </tr>
+			    
+			  	
+			  {% endfor %}
+
+			</table>
+			 
+		</div>
+	{% endfor %}		
+</div>
+
+
+
+
+<!--
+
+
+<div class="row">
+
+ {% for sub, pages in contenido.items %}
+
+
+
+	<div class="col-sm col-lg-3">
+		
+			<div class="card text-center">
+				  <div class="card-header">
+				    {{ sub }}
+				  </div>
+
+				  <div class="card-body">
+
+				     {% for page in pages %}
+				      <a class="nav-link" href="../page/{{ page.id }}" data-toggle="tooltip" title="{{ page.descripcion }}">{{ page }}</a>
+				    {% endfor %}
+
+
+
+				  </div>
+
+
+			</div>
+
+
+	</div>
+
+
+
+{% endfor %}
+
+
+
+</div>
+-->
+
+<div class="row"><p></div>
+
+
+
+{% endblock %}

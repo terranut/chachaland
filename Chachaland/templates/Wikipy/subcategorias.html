@@ -1,0 +1,123 @@
+{% extends "Wikipy/index.html" %}
+
+
+{% block subcategoria %}
+{{grupo}} || 
+
+
+<a href="/wiki/grupo/{{grupo.id}}/cat/{{categoria.id}}">
+<span class="label label-warning">{{categoria}} </span>
+</a>
+
+<div class="page-header">
+  <h1>{{subcategoria}} </h1>
+
+
+  
+  <ol class="breadcrumb">
+  	{%if edit%}
+  <li><a href="/wiki/add/pag/{{subcategoria.id}}"><span class="label label-primary">Añadir</span></a></li>
+  	{%endif%}
+  <li>
+
+  	{% if total_paginas > 0 %}
+
+  	<a href="#"><span class="badge">{{total_paginas}}</span></a>
+  	{%endif%}
+
+	{% if total_paginas == 0 %}
+
+	{%if edit%}
+  	<a href="/wiki/rm/sub/{{subcategoria.id}}/{{grupo.id}}/{{categoria.id}}"><span class="label label-danger">Eliminar</span></a>
+  	{%endif%}
+
+  	{%endif%}
+
+  	
+
+
+
+  </li>
+
+  
+
+  {% for pagina in paginas %}
+
+  <li><a href="#{{pagina.titulo}}">{{pagina.titulo}}</a></li>
+  {%endfor%}
+  
+
+</ol>
+</div>
+
+ 
+
+          <div>
+           {% for pagina in paginas %}
+
+            <a name="{{pagina.titulo}}" class="anchor" id="top"></a>
+         
+
+           <div class="panel panel-default">
+			  <div class="panel-heading">
+
+			 <spam style="font-size: 20px">{{pagina.titulo}}</spam>
+			
+
+			 	<div class="btn-group btn-group-xs" role="group" aria-label="...">
+
+			 	{%if edit%}
+			   <a href="/wiki/edit/pag/{{pagina.id}}/{{grupo.id}}/{{categoria.id}}/{{subcategoria.id}}" style="padding: 2px; text-decoration: none">
+
+
+			  	<span class="label label-success">
+			  	<span class="glyphicon glyphicon-pencil "></span>
+			  </span>
+			  </a>
+
+
+
+			  <a href="/wiki/rm/pag/{{pagina.id}}/{{subcategoria.id}}/{{grupo.id}}/{{categoria.id}}" style="padding: 2px; text-decoration: none">
+			  	<span class="label label-danger">
+			  	<span class="glyphicon glyphicon-trash "></span>
+			  </span>
+			  </a>
+			  {%endif%}
+
+
+			
+			  
+			</div>
+
+			</div>
+
+			  <div class="panel-body">
+
+
+			     {{pagina.contenido|safe  }}
+
+
+			  </div>
+			</div>
+
+		
+					
+
+			
+           
+
+			
+           {%endfor%}
+          </div>
+
+       
+
+
+
+
+
+
+
+
+ 
+{% endblock %}

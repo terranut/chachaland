@@ -1,0 +1,90 @@
+{% extends "Docu/index.html" %}
+
+{% block subcategoria %}
+
+
+
+      <h1 class="my-4">
+   
+        <small></small>
+      </h1>
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+					 
+
+
+						<div class="col-sm">
+							
+								<div class="card text-center">
+									  <div class="card-header">
+										Zona de pruebas
+
+
+									  </div>
+
+									  <div class="card-body">
+
+									  	
+
+
+										  	
+										  			
+													<form class="form-control" style="border: 0px"> 
+													
+														<textarea class="form-control" id="yourcode" rows="10" style="font-family:monospace;background-color: #151515;color: white">{{ python }}	
+														</textarea><br /> 
+													
+														
+														</form> 
+														<button class="btn" type="button" onclick="runit()">Correr</button>
+														<pre id="output" ></pre>  
+
+									  </div>
+
+
+									    <div class="card-body">
+									    	<div class="row">
+									    		<div class="col-sm-4">
+									    		</div>
+									    		<div class="col-sm-4">
+									    			<div id="mycanvas" class="container-fluid"></div> 
+									    		</div>
+														<!-- If you want turtle graphics include a canvas -->
+												<div class="col-sm-4">
+									    		</div>
+												
+											</div>
+								
+									  </div>
+
+
+								</div>
+
+
+						</div>
+
+
+
+
+
+				
+				
+
+
+</div>
+
+<div class="row">
+	<p>
+</div>
+
+
+{% endblock %}

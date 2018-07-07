@@ -1,0 +1,118 @@
+{% extends "Wikipy/index.html" %}
+
+
+{% block search %}
+
+{% if buscar %}
+
+<h3>Resultados:</h3>
+
+
+{%if not resultados_paginas%}
+No hay resultados coincidentes
+
+{%endif%}
+
+ <table class="table table-hover">
+             
+
+              <thead>
+
+                <tr class="active">
+                    <td>Coincidentes con</td>
+                    <td>{{buscar|escape}}</td>
+
+                </tr>
+
+
+              </thead>
+
+
+              <tbody>
+              	{%for pagina in resultados_paginas%}
+              	
+	         	   	<tr>
+		              		<td>
+		              			{%if pagina.subcategoria.id%}
+
+		              			<a href="/wiki/grupo/{{pagina.subcategoria.categoria.grupo.id}}/cat/{{pagina.subcategoria.categoria.id}}/sub/{{pagina.subcategoria.id}}#{{pagina|escape}}">
+		              			{%endif%}
+
+		              			{%if not pagina.subcategoria.id%}
+		              			<a href="/wiki/grupo/{{pagina.categoria.grupo.id}}/cat/{{pagina.categoria.id}}">
+
+
+		              			{%endif%}
+
+		              			{{pagina|escape}}
+		              			</a><br>
+
+		              			{%if pagina.subcategoria.id%}
+		              			
+
+								   <a href="/wiki/grupo/{{pagina.subcategoria.categoria.grupo.id}}/cat/{{pagina.subcategoria.categoria.id}}" style="margin: 2px; text-decoration: none">
+								   <span class="label label-success">
+								          {{pagina.subcategoria.categoria}}
+								   </span>
+								   </a>
+								    <br>
+
+								    <a href="/wiki/grupo/{{pagina.subcategoria.categoria.grupo.id}}" style="margin: 2px; text-decoration: none">
+								   <span class="label label-warning">
+								          {{pagina.subcategoria.categoria.grupo}}
+								   </span>
+								   </a>
+
+								   <br>
+								  {%endif%}
+
+								  {%if not pagina.subcategoria.id%}
+								    <a href="/wiki/grupo/{{pagina.categoria.grupo.id}}" style="margin: 2px; text-decoration: none">
+								   <span class="label label-warning">
+								          {{pagina.categoria.grupo}}
+								   </span>
+								   </a>
+								   {%endif%}
+		              			
+
+		              			
+
+		              			
+
+				        	</td>
+
+				        	<td>             			
+				        		{{pagina.contenido|safe}}
+		              		</td>
+
+	              	</tr>
+
+	            {%endfor%}
+
+	          
+
+
+              </tbody>
+
+ </table>
+
+
+ {%endif%}
+
+
+{% if not buscar %}
+
+No has realizado ninguna busqueda
+
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+{% endblock %}

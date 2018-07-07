@@ -1,0 +1,148 @@
+{% extends "Wikipy/index.html" %}
+ {% load static %}
+
+
+
+
+{% block grupo %}
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.0/Chart.min.js"></script>
+
+
+   <h1>{{grupo}}</h1>
+
+
+{%for categoria in categorias%}
+
+<div class="col-sm-6 col-md-2">
+	<span style="text-align: center;display: block"> 
+
+	<h4>{{categoria}}</h4>
+	</span>
+
+	<canvas id="myChart-{{categoria.id}}" width="200px" height="200px"></canvas>
+
+
+
+ <table class="table table-hover">
+             
+              <thead>
+                <tr class="active">
+                    <td></td>
+                    <td></td>
+                </tr>
+
+              </thead>
+              <tbody>
+              	
+              	{%for subcategoria in categoria.subcategorias%}
+
+              	<tr>
+              		<td>
+              			<a href="/wiki/grupo/{{categoria.grupo.id}}/cat/{{categoria.id}}/sub/{{subcategoria.id}}">
+		        	  {{subcategoria}}
+		        		</a>
+
+		        	</td>
+
+              		<td class = "text-left">
+
+              			<a data-toggle="collapse" href="#collapse-{}" aria-expanded="false" aria-controls="collapseExample">
+						  
+						
+              			<span class="label label-default pull-right" style="background-color:{{subcategoria.color}}">
+
+
+
+              				{{subcategoria.num_paginas}}
+              			</span>
+
+              			</a>
+
+              		
+
+              		</td>
+
+              	</tr>
+              		{%endfor%}
+
+               	 
+
+
+              </tbody>
+
+ </table>
+
+
+</div>
+
+{%endfor%}
+
+
+{%for categoria in categorias%}
+
+
+<script type="text/javascript">
+
+	
+var ctx = document.getElementById("myChart-{{categoria.id}}");
+
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: [],
+        datasets: [{
+            label: '# of Votes',
+
+            data: [
+            {%for subcategoria in categoria.subcategorias%}
+
+
+            '{{subcategoria.num_paginas}}',
+            {%endfor%}
+
+            ],
+
+            backgroundColor: [
+                'rgb(255, 64, 0)',
+                'rgb(255, 191, 0)',
+                'rgb(191, 255, 0)',
+                'rgb(0, 153, 0)',
+
+                'rgb(0, 115, 153)',
+                'rgb(77, 0, 153)',
+                'rgb(153, 0, 153)',
+                'rgb(153, 153, 0)',
+                'rgb(230, 0, 230)',
+
+
+                'rgb(102, 153, 153)',
+                'rgb(0, 51, 0)',
+                'rgb(51, 51, 0)',
+                'rgb(102, 51, 0',
+                'rgb(204, 51, 0)',
+                'rgb(153, 51, 51)',
+
+                'rgb(204, 102, 153)',
+                'rgb(153, 51, 255)',
+                'rgb(102, 102, 153)',
+                'rgb(255, 204, 204)',
+                'rgb(0, 51, 102)',
+
+            ],
+       
+            borderWidth: 0
+        }]
+    },
+    options: {}
+});
+
+
+
+</script>
+
+
+{%endfor%}
+
+
+
+{%endblock%}
